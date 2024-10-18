@@ -1,6 +1,6 @@
 variable "rg_name" {
   type    = string
-  default = "rg-pipelinejh"
+  default = "rg-pipeline"
 }
 variable "rg_location" {
   type    = string
