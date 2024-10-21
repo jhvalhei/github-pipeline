@@ -5,7 +5,7 @@ locals {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "test"
+  name     = local.rg_name
   location = var.rg_location
 }
 
