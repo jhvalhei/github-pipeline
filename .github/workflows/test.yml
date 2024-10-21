@@ -23,7 +23,7 @@ jobs:
       ARM_SECRETS_ID: ${{ secrets.ARM_SECRETS_ID }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      WORKING_DIR: ./github-pipeline
+      WORKING_DIR: ./
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
