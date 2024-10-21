@@ -6,6 +6,8 @@ name: uke39
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
+    paths:
+      - '/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -20,7 +22,7 @@ jobs:
     name: 'test'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-      ARM_SECRETS_ID: ${{ secrets.ARM_SECRETS_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.ARM_SECRETS_ID }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
       WORKING_DIR: ./
