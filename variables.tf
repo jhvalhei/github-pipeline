@@ -1,6 +1,6 @@
 variable "rg_name" {
   type    = string
-  default = "testjh"
+  default = "testjh_1"
 }
 variable "rg_location" {
   type    = string
